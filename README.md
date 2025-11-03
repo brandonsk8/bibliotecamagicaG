@@ -46,10 +46,7 @@ BibliotecaMagica/
 │
 └── main.py
 
-yaml
-Copiar código
 
----
 
 ##  Tecnologías Utilizadas
 
@@ -75,31 +72,28 @@ Verifica Graphviz con:
 ```bash
 dot -V
  Instalar dependencias
-bash
-Copiar código
+
 pip install graphviz
 pip install ttkbootstrap
 pip install pandas
  Ejecutar el sistema
-bash
-Copiar código
+
+
+
 python main.py
 La aplicación abrirá la ventana principal con las opciones de carga, visualización y simulación.
 
  Archivos de Entrada (CSV)
  libros.csv
-csv
-Copiar código
+
 Título,Autor,ISBN,Año,Género,Estado
 El Principito,Antoine de Saint-Exupéry,9783161484100,1943,Fantasía,Disponible
  bibliotecas.csv
-csv
-Copiar código
+
 Nombre,Ubicación,TiempoIngreso,TiempoTraspaso,IntervaloDespacho
 Biblioteca Central,Guatemala,5,2,10
  conexiones.csv
-csv
-Copiar código
+
 Origen,Destino,Peso
 Biblioteca Central,Biblioteca Norte,8
  Estructuras de Datos Implementadas
@@ -117,8 +111,8 @@ El sistema genera representaciones gráficas automáticas en formato .png y .dot
 
 Ejemplo de generación desde Python:
 
-python
-Copiar código
+
+
 from graphviz import Digraph
 
 dot = Digraph()
@@ -174,11 +168,10 @@ Grafo (Dijkstra)	O(V²)	-	O(V²)
 
 *Promedio con buena dispersión.
 
- Capturas de Ejemplo
-(Coloca aquí tus imágenes generadas por Graphviz, como ejemplos de árbol, grafo y tabla hash.)
+
 
 markdown
-Copiar código
+
 ![Ejemplo Grafo](reportes/grafo_bibliotecas.png)
 ![Árbol AVL](reportes/arbolAVL.png)
 ![Tabla Hash](reportes/tablaHash.png)
